@@ -1,10 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router';
+import { OverviewViewComponent } from './pages/overview-view/overview-view.component';
+
+const routes: Routes = [
+  {
+    path: '', component: OverviewViewComponent
+  }
+];
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
+  declarations: [], imports: [
+    CommonModule,
+    RouterModule.forChild(routes)
+  ], exports: [
+    RouterModule
   ]
 })
-export class OverviewRoutingModule { }
+export class OverviewRoutingModule {}

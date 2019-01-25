@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+// Angular Quickstart Project
+// ##############################################################################
+
+// FontAwesome Configuration
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
+// NGX-Toastr Configuration
+@import "~ngx-toastr/toastr.css";
+
+// Bulma Configuration
+@import "~bulma/bulma";
+
+// Additions to Bulma
+@import "bulma-additional";
