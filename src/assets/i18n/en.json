@@ -1,0 +1,13 @@
+{
+  "lang": {
+    "en": "English",
+    "de": "German"
+  },
+  "overview": {
+    "title": "Title in EN",
+    "subtitle": "Subtitle in EN"
+  },
+  "header": {
+    "welcome": "Welcome to Angular"
+  }
+}

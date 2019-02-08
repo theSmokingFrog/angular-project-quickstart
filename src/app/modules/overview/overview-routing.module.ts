@@ -7,34 +7,48 @@ import { ContentShowcaseComponent } from './components/content-showcase/content-
 import { FormShowcaseComponent } from './components/form-showcase/form-showcase.component';
 import { HeroShowcaseComponent } from './components/hero-showcase/hero-showcase.component';
 import { TypographyShowcaseComponent } from './components/typography-showcase/typography-showcase.component';
+import { TranslationShowcaseComponent } from './components/translation-showcase/translation-showcase.component';
 
 const routes: Routes = [
   {
-    path: '', component: OverviewViewComponent, children: [
+    path:      '',
+    component: OverviewViewComponent,
+    children:  [
       {
-        path: 'buttons', component: ButtonShowcaseComponent
+        path:      'buttons',
+        component: ButtonShowcaseComponent
       },
       {
-        path: 'contents', component: ContentShowcaseComponent
+        path:      'contents',
+        component: ContentShowcaseComponent
       },
       {
-        path: 'forms', component: FormShowcaseComponent
+        path:      'forms',
+        component: FormShowcaseComponent
       },
       {
-        path: 'heroes', component: HeroShowcaseComponent
+        path:      'heroes',
+        component: HeroShowcaseComponent
       },
       {
-        path: 'tables', component: TypographyShowcaseComponent
+        path:      'tables',
+        component: TypographyShowcaseComponent
+      },
+      {
+        path:      'translations',
+        component: TranslationShowcaseComponent
       }
     ]
   }
 ];
 
 @NgModule({
-  declarations: [], imports: [
+  declarations: [],
+  imports:      [
     CommonModule,
     RouterModule.forChild(routes)
-  ], exports: [
+  ],
+  exports:      [
     RouterModule
   ]
 })

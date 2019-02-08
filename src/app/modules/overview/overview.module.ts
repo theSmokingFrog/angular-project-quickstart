@@ -7,6 +7,8 @@ import { ContentShowcaseComponent } from './components/content-showcase/content-
 import { FormShowcaseComponent } from './components/form-showcase/form-showcase.component';
 import { HeroShowcaseComponent } from './components/hero-showcase/hero-showcase.component';
 import { TypographyShowcaseComponent } from './components/typography-showcase/typography-showcase.component';
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationShowcaseComponent } from './components/translation-showcase/translation-showcase.component';
 
 @NgModule({
   declarations: [
@@ -15,9 +17,12 @@ import { TypographyShowcaseComponent } from './components/typography-showcase/ty
     ContentShowcaseComponent,
     FormShowcaseComponent,
     HeroShowcaseComponent,
-    TypographyShowcaseComponent
-  ], imports: [
+    TypographyShowcaseComponent,
+    TranslationShowcaseComponent
+  ],
+  imports:      [
     CommonModule,
+    TranslateModule.forChild(),
     OverviewRoutingModule
   ]
 })
